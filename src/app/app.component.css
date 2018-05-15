@@ -1,0 +1,14 @@
+.see-more {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.see-more a {
+  box-sizing: border-box;
+  color: orangered;
+  margin: 20px;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
