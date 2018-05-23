@@ -25,12 +25,12 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="competitions">
+<div class="competitions" *ngFor="let competition of competitions"  >
   <ul class="competitions__list">
     <li class="competitions__item">
-      <a href="competition/:id">
-        <h2>League name</h2>
-        <img src="https://placeimg.com/120/80/any/grayscale" alt="League name">
+      <a href="competition/{{competition.id}}">
+        {{ competition.caption }}
+        <img class="competitions__image" src="../assets/images/home-bg.jpg" alt="">
       </a>
     </li>
   </ul>

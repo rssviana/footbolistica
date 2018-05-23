@@ -12,3 +12,37 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.competitions__list {
+  display: grid;
+  grid-template-areas: "item";
+  list-style: none;
+
+}@media (min-width: 720px){
+  .competitions__list {
+    grid-template-areas: "item item"
+  }
+}
+@media (min-width: 992px){
+  .competitions__list {
+    grid-template-areas: "item item item"
+  }
+}
+@media (min-width: 992px){
+  .competitions__list {
+    grid-template-areas: "item item item"
+  }
+}
+.competitions__item {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  grid-area: item;
+}
+.competitions__item a {
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+}
+img {
+  width: 300px;
+}
