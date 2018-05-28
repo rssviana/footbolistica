@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.74) 100%
+    ),
+    url("../assets/images/home-bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.header {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid greenyellow;
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.header__title {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Lobster", serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+@media (min-width: 720px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
 .see-more {
   align-items: center;
   display: flex;
@@ -12,31 +57,43 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.competitons {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .competitions__list {
+  box-sizing: border-box;
   display: grid;
-  grid-template-areas: "item";
+  grid-gap: 5%;
+  grid-template-columns: 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 720px) {
+  .competitions__list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+@media (min-width: 992px) {
+  .competitions__list {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  .competitions__list {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}
 
-}@media (min-width: 720px){
-  .competitions__list {
-    grid-template-areas: "item item"
-  }
-}
-@media (min-width: 992px){
-  .competitions__list {
-    grid-template-areas: "item item item"
-  }
-}
-@media (min-width: 992px){
-  .competitions__list {
-    grid-template-areas: "item item item"
-  }
-}
 .competitions__item {
+  background: #f8f8f8;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  grid-area: item;
+  margin: 5px;
 }
 .competitions__item a {
   display: flex;
@@ -44,5 +101,41 @@
   text-decoration: none;
 }
 img {
-  width: 300px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.footer {
+  align-items: center;
+  background: #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 30vh;
+  padding: 1.3rem 5%;
+  width: 100%;
+  text-align: center;
+}
+.footer__list {
+  box-sizing: border-box;
+  margin: 0 auto 3.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer_item {
+  margin-bottom: 12px;
+}
+.footer__item a {
+  text-decoration: none;
+  color: greenyellow;
+}
+.footer__text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  width: 50%;
 }
