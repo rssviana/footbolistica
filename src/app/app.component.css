@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-size: 16px;
 }
+
 .hero {
   background: linear-gradient(
       to bottom,
@@ -17,7 +18,9 @@ body {
     url("../assets/images/home-bg.jpg");
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
 }
+
 .header {
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
@@ -29,6 +32,7 @@ body {
   width: 100%;
   margin-bottom: 5%;
 }
+
 .header__title {
   box-sizing: border-box;
   color: #fff;
@@ -43,12 +47,14 @@ body {
     font-size: 2.5rem;
   }
 }
+
 .see-more {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /*flex-direction: column;
+  justify-content: center;*/
 }
+
 .see-more a {
   box-sizing: border-box;
   color: orangered;
@@ -57,16 +63,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.competitons {
+
+.competitions {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  max-width: 980px;
 }
+
 .competitions__list {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 5%;
+  grid-gap: 10%;
   grid-template-columns: 1fr;
   list-style: none;
   margin: 0;
@@ -90,19 +99,49 @@ body {
 
 .competitions__item {
   background: #f8f8f8;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 5px;
 }
+
 .competitions__item a {
+  align-content: space-between;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  min-height: 100%;
   text-decoration: none;
 }
-img {
+
+.competitions__title {
+  box-sizing: border-box;
+  color: #62355c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.competitions__image {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   display: block;
   height: auto;
+  width: 100%;
+}
+
+.competitions__button {
+  align-self: flex-end;
+  background: #15c123;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Open sans";
+  font-size: 1rem;
+  line-height: 2.5rem;
+  margin: auto 0 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -118,6 +157,7 @@ img {
   width: 100%;
   text-align: center;
 }
+
 .footer__list {
   box-sizing: border-box;
   margin: 0 auto 3.5rem;
@@ -127,13 +167,16 @@ img {
   justify-content: space-around;
   width: 100%;
 }
+
 .footer_item {
   margin-bottom: 12px;
 }
+
 .footer__item a {
   text-decoration: none;
   color: greenyellow;
 }
+
 .footer__text {
   color: #fff;
   font-family: "Open Sans", sans-serif;

@@ -8,8 +8,9 @@
     <ul class="competitions__list">
       <li class="competitions__item" *ngFor="let competition of competitions">
         <a href="competition/{{competition.id}}">
-          {{ competition.caption }}
-          <img class="competitions__image" src="../assets/images/home-bg.jpg" alt="">
+          <img class="competitions__image" src="../assets/images/campeonato.png" alt="">
+          <h2 class="competitions__title">{{ competition.caption }}</h2>
+          <button class="competitions__button">Veja +</button>
         </a>
       </li>
     </ul>
@@ -18,21 +19,16 @@
 <footer class="footer">
   <ul class="footer__list">
     <li class="footer__item">
-      <a href="#">Link</a>
+      <a href="#">Facebook</a>
     </li>
     <li class="footer__item">
-      <a href="#">Link</a>
+      <a href="#">Linkedin</a>
     </li>
     <li class="footer__item">
-      <a href="#">Link</a>
-    </li>
-    <li class="footer__item">
-      <a href="#">Link</a>
-    </li>
-    <li class="footer__item">
-      <a href="#">Link</a>
+      <a href="#">Github</a>
     </li>
   </ul>
   <p class="footer__text">Applicação feita apenas para avaliação de disciplica Desenvolvimento mobile do curso de Ciência da Computação da faculdade
-    Unisuam.</p>
+    Unisuam.
+  </p>
 </footer>
