@@ -1,6 +1,6 @@
 ![Image of soccer ball](https://d30y9cdsu7xlg0.cloudfront.net/png/73767-200.png)
 
-# Footbolista
+# Footbolistica
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
