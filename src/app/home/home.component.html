@@ -1,0 +1,10 @@
+<div class="competitions">
+  <ul class="competitions__list">
+    <li class="competitions__item" *ngFor="let competition of competitions">
+      <a routerLink="/competition/{{competition.id}}">
+        <img class="competitions__image" src="../assets/images/campeonato.png" alt="">
+        <h2 class="competitions__title">{{ competition.caption }}</h2>
+      </a>
+    </li>
+  </ul>
+</div>

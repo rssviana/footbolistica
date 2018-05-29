@@ -4,17 +4,7 @@
       {{ title }}
     </h1>
   </header>
-  <div class="competitions">
-    <ul class="competitions__list">
-      <li class="competitions__item" *ngFor="let competition of competitions">
-        <a href="competition/{{competition.id}}">
-          <img class="competitions__image" src="../assets/images/campeonato.png" alt="">
-          <h2 class="competitions__title">{{ competition.caption }}</h2>
-          <button class="competitions__button">Veja +</button>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <router-outlet></router-outlet>
 </div>
 <footer class="footer">
   <ul class="footer__list">
