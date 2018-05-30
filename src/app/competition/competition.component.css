@@ -1,0 +1,88 @@
+.league {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.league__name {
+  box-sizing: border-box;
+  color: #fff;
+  font: bold 2rem "Open sans";
+  margin: 0;
+  padding: 0;
+}
+.league__list-teams {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 980px;
+}
+@media (min-width: 720px) {
+  .league__list-teams {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+@media (min-width: 992px) {
+  .league__list-teams {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  .league__list-teams {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}
+.league__team {
+  background: #f8f8f8;
+  border-radius: 4px;
+  margin: 5px;
+  overflow: hidden;
+}
+.league__team a {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  text-decoration: none;
+  padding: 0 2%;
+}
+.team__name {
+  box-sizing: border-box;
+  color: #62355c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem auto;
+  padding: 0 10px;
+}
+.team__logo {
+  display: block;
+  height: auto;
+  width: 70%;
+  margin-bottom: 40px;
+}
+@media (min-width: 720px) {
+  .team__logo {
+    max-height: 250px;
+    width: 100%;
+  }
+}
+.team__data {
+  margin: auto 0 0;
+}
+.team__data p {
+  box-sizing: border-box;
+  color: #62355c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}

@@ -10,6 +10,8 @@ import { HttpHeaders, HttpClient } from "@angular/common/http";
 export class CompetitionComponent implements OnInit {
   public competitionID;
   apiURL = "http://api.football-data.org/v1/";
+  league = new Object();
+  leagueTeams = new Array();
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
@@ -27,7 +29,9 @@ export class CompetitionComponent implements OnInit {
         }
       )
       .subscribe(leaguetable => {
-        console.log(leaguetable);
+        this.league = leaguetable;
+        console.log(this.league);
+        this.leagueTeams = leaguetable.standing;
       });
   }
 }

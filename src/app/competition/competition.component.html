@@ -1,3 +1,18 @@
-<p>
-  competition works!
-</p>
+<div class="league">
+  <h2 class="league__name">
+    {{ league.leagueCaption }}
+  </h2>
+  <ul class="league__list-teams">
+    <li class="league__team team" *ngFor="let team of leagueTeams">
+      <a href="">
+        <h3 class="team__name">{{ team.teamName }}</h3>
+        <img class="team__logo" src="{{team.crestURI}}" alt="{{team.teamName}}">
+        <div class="team__data">
+          <p>Posição: {{team.position}}</p>
+          <p>Total de pontos: {{team.points}}</p>
+          <p>Vitórias na temporada: {{team.wins}}</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
